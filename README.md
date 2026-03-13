@@ -1,20 +1,20 @@
 # TicTacToe in 3 Smart Contracts Paradigms 🧩
 
-- [TicTacToe in 3 Smart Contracts Paradigms 🧩](#tictactoe-in-3-smart-contracts-paradigms---)
-  * [Introduction 👋](#introduction---)
-  * [Smart Contract Paradigms 📗](#smart-contract-paradigms---)
+- [TicTacToe in 3 Smart Contracts Paradigms ](#tictactoe-in-3-smart-contracts-paradigms---)
+  * [Introduction ](#introduction---)
+  * [Smart Contract Paradigms ](#smart-contract-paradigms---)
     + [Account-Based Paradigm](#account-based-paradigm)
       - [Stateful Contracts](#stateful-contracts)
       - [Stateless Contracts](#stateless-contracts)
     + [UTXO Based Paradigm](#utxo-based-paradigm)
       - [Witness Constrains](#witness-constraints)
   * [Parallelizability](#parallelizability)
-  * [Tic Tac Toe in the Stateful Paradigm 🧩](#tic-tac-toe-in-the-stateful-paradigm---)
-  * [Tic Tac Toe in the Stateless Paradigm 🧩](#tic-tac-toe-in-the-stateless-paradigm---)
-  * [Tic Tac Toe in the UTXO Paradigm 🧩](#tic-tac-toe-in-the-utxo-paradigm---)
-  * [Contributing 🙌](#contributing---)
-  * [Acknowledgments 🙏](#acknowledgments---)
-  * [License 📜](#license---)
+  * [Tic Tac Toe in the Stateful Paradigm ](#tic-tac-toe-in-the-stateful-paradigm---)
+  * [Tic Tac Toe in the Stateless Paradigm ](#tic-tac-toe-in-the-stateless-paradigm---)
+  * [Tic Tac Toe in the UTXO Paradigm ](#tic-tac-toe-in-the-utxo-paradigm---)
+  * [Contributing ](#contributing---)
+  * [Acknowledgments 🙏(#acknowledgments---)
+  * [License ](#license---)
 
 You can visit [Website Docs](https://tic-tac-toe-blockchain-sbs9.vercel.app/docs/intro) to learn more about this project.
 
@@ -38,9 +38,9 @@ The aim of this project is to provide a comprehensive understanding of these sma
 
 So we will provide an overview of the Tic Tac Toe game implemented in those three different smart contract paradigms. Each implementation serves as a practical demonstration of how these paradigms handle state, transitions, and logic execution.
 
-> Don't worry, we won't bore you with a tutorial on how to play Tic Tac Toe – we trust that you've all mastered it during those 'productive' school days when lessons just couldn't compete with this classic game. 😉
+> Don't worry, we won't bore you with a tutorial on how to play Tic Tac Toe – we trust that you've all mastered it during those 'productive' school days when lessons just couldn't compete with this classic game. 
 
-## Smart Contract Paradigms 📗
+## Smart Contract Paradigms 
 
 Smart contracts are self-executing, immutable pieces of code that automate and enforce the execution of predefined agreements on a blockchain. These agreements can range from simple transactions to complex decentralized applications (DApps). To better understand the implementations in this project, let's explore three primary smart contract paradigms:
 
@@ -144,7 +144,7 @@ const instruction = new TransactionInstruction({
 
 - **UTXO-Based Contracts**: also UTXO-based contracts can be highly parallelizable. In this paradigm, each transaction consumes specific UTXOs and creates new ones. These UTXOs are typically disjoint and do not overlap in terms of state. As a result, multiple transactions can be processed in parallel.
 
-## Tic Tac Toe in the Stateful Paradigm 🧩
+## Tic Tac Toe in the Stateful Paradigm 
 
 Account-Based smart contracts, when stateful, have the capability to maintain and modify their own internal state. The contract itself maintains the state of the game. It doesn't rely on external systems to keep track of the game board or whose turn it is. Instead, it updates its internal state based on the actions of the players tracking the game board, whose turn it is, and whether someone has won.
 
@@ -243,7 +243,7 @@ Finally, we need a function to allow players to withdraw their funds if the game
 
 </details>
 
-## Tic Tac Toe in the Stateless Paradigm 🧩
+## Tic Tac Toe in the Stateless Paradigm 
 
 The Account-Based paradigm, in its stateless form, allows executing smart contract functions without maintaining any internal state.
 
@@ -386,7 +386,7 @@ pub fn timeout(ctx: TimeoutCtx)  {
 
 </details>
 
-## Tic Tac Toe in the UTXO Paradigm 🧩
+## Tic Tac Toe in the UTXO Paradigm 
 
 In the UTXO-Based paradigm, we adapted the Tic Tac Toe game to utilize the unique principles of this model.
 
@@ -462,11 +462,11 @@ outputs:
 </details>
 
 
-## Contributing 🙌
+## Contributing 
 
 We welcome contributions to this project! If you're interested, here is an idea: note that while we have implemented Tic Tac Toe game for [Ethereum](https://ethereum.org/en/) using [Solidity](https://soliditylang.org) (Statefull) and for [Solana](https://solana.com) using [Rust](https://www.rust-lang.org) with the [Anchor framework](https://www.anchor-lang.com) (Stateless), we currently only have a scaffolded pseudocode for the UTXO-based paradigm. If you're interested in contributing, you can implement the UTXO-based Tic Tac Toe game in a real-world blockchain platform, such as [Bitcoin](https://bitcoin.org/en/), [Cardano](https://cardano.org), etc..
 
-## Acknowledgments 🙏
+## Acknowledgments 
 
 This project drew inspiration from the speakers and content of the [4th Scientific School on Blockchain & Distributed Ledger Technologies](https://dlt-school.github.io) held at the University of Cagliari.
 
