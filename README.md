@@ -20,7 +20,7 @@ You can visit [Website Docs](https://tic-tac-toe-blockchain-sbs9.vercel.app/docs
 
 ![WebDocs](web-docs/static/img/web-docs.png)
 
-## Introduction 👋
+## Introduction 
 
 Hello, in this repository, we explore the three fundamental smart contract paradigms: 
 - UTXO-based
@@ -477,6 +477,6 @@ Here are some of the resources that we found particularly useful:
 - [A Deep Dive into Solana Account Model](https://medium.com/@lianxiongdi/a-deep-dive-into-solana-account-model-1-introduction-7b0408656593)
 - [An Introduction to the Solana Account Model](https://www.quicknode.com/guides/solana-development/getting-started/an-introduction-to-the-solana-account-model)
 
-## License 📜
+## License 
 
 This project is licensed under the [MIT License](LICENSE).
